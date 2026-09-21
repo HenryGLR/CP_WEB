@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-100 flex items-center pt-20">
+    <section id = "inicio" className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-100 flex items-center pt-20">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 grid md:grid-cols-2 gap-12 items-center">
 
         <div>

@@ -17,7 +17,7 @@ const Contato = () => {
   }
 
   return (
-    <section className="py-20 bg-gray-900 text-white">
+    <section id = "contato"className="py-20 bg-gray-900 text-white">
       <div className="max-w-4xl mx-auto px-6 text-center">
 
         <p className="text-orange-500 font-semibold mb-2">
