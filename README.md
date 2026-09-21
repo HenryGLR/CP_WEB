@@ -1,16 +1,59 @@
-# React + Vite
+# GourmetOn
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O GourmetOn é uma landing page de um aplicativo fictício de delivery de comida, desenvolvida com React e Tailwind CSS.
 
-Currently, two official plugins are available:
+O objetivo do projeto é apresentar o aplicativo de forma moderna, responsiva e interativa, além de consumir dados de uma API externa de comidas utilizando Fetch.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades
 
-## React Compiler
+- Navegação com menu fixo
+- Scroll suave entre as seções
+- Layout responsivo
+- Menu mobile
+- Seção de benefícios
+- Seção de funcionalidades
+- Listagem de pratos consumidos de uma API
+- Depoimentos de clientes
+- Formulário para cadastro de e-mail
+- Rodapé com informações de contato
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias utilizadas
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- Tailwind CSS
+- JavaScript
+- Fetch API
+- JSON
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## API utilizada
+
+Foi utilizada a API TheMealDB para buscar informações de pratos.
+
+Os dados são carregados de forma assíncrona utilizando `fetch`, `useEffect` e `useState`.
+
+## Como executar o projeto
+
+Clone o repositório:
+
+git clone URL_DO_REPOSITORIO
+
+Entre na pasta do projeto:
+
+cd CP_WEB
+
+Instale as dependências:
+
+npm install
+
+Execute o projeto:
+
+npm run dev
+
+## Integrantes
+
+- Coloque aqui o nome dos integrantes do grupo
+
+## Deploy
+
+O projeto será publicado utilizando a Vercel.
