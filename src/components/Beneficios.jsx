@@ -1,4 +1,4 @@
-const Benefits = () => {
+const Beneficios = () => {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
@@ -69,4 +69,4 @@ const Benefits = () => {
   )
 }
 
-export default Benefits
+export default Beneficios

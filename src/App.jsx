@@ -1,15 +1,17 @@
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
-import Benefits from "./components/Benefits"
-import Features from "./components/Features"
+import Beneficios from "./components/Beneficios"
+import Funcionalidades from "./components/Funcionalidades"
+import Pratos from "./components/Pratos"
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <Hero />
-      <Benefits />
-      <Features />
+      <Beneficios />
+      <Funcionalidades />
+      <Pratos />
     </div>
   )
 }

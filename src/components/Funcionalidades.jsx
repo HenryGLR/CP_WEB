@@ -1,4 +1,4 @@
-const Features = () => {
+const Funcionalidades = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
@@ -74,4 +74,4 @@ const Features = () => {
   )
 }
 
-export default Features
+export default Funcionalidades
