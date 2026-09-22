@@ -51,8 +51,9 @@ Execute o projeto:
 npm run dev
 
 ## Integrantes
-
-- Coloque aqui o nome dos integrantes do grupo
+Henry Gabriel - RM:570063
+Gustavo Braga - RM:569211
+Nicholas Belo - RM:571063
 
 ## Deploy
 
