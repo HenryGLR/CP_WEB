@@ -8,7 +8,10 @@ const Hero = () => {
 
         <div>
           <span className="inline-block bg-orange-100 text-orange-600 font-semibold px-4 py-2 rounded-full mb-6">
-            🍔 Delivery rápido e fácil
+            <span className="material-icons align-middle mr-1" aria-hidden="true">
+              fastfood
+            </span>
+            Delivery rápido e fácil
           </span>
 
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
@@ -84,7 +87,10 @@ const Hero = () => {
             </p>
 
             <p className="text-xl font-bold text-gray-900">
-              ⚡ 25 minutos
+              <span className="material-icons align-middle mr-1" aria-hidden="true">
+                bolt
+              </span>
+              25 minutos
             </p>
           </div>
 

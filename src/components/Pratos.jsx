@@ -2,37 +2,52 @@ import { useEffect, useState } from "react"
 
 const Pratos = () => {
 
+  // Cria uma lista vazia para armazenar os pratos recebidos da API.
   const [pratos, setPratos] = useState([])
+
+  // Controla se a mensagem de carregamento deve ser exibida na tela.
   const [carregando, setCarregando] = useState(true)
 
+  // Executa o código de busca quando o componente é carregado.
   useEffect(() => {
 
+    // Declara uma função assíncrona para buscar os pratos na API.
     const buscarPratos = async () => {
 
+      // Inicia o bloco que pode gerar um erro durante a requisição.
       try {
 
+        // Faz uma requisição para buscar pratos com frango e aguarda a resposta.
         const resposta = await fetch(
           "https://www.themealdb.com/api/json/v1/1/search.php?s=chicken"
         )
 
+        // Converte o conteúdo da resposta para um objeto JavaScript.
         const dados = await resposta.json()
 
+        // Salva os pratos recebidos; usa uma lista vazia se a API não retornar meals.
         setPratos(dados.meals || [])
 
+      // Captura erros de conexão ou de processamento da resposta.
       } catch (erro) {
 
+        // Exibe o erro no console para facilitar a identificação do problema.
         console.error("Erro ao buscar os pratos:", erro)
 
+      // Executa este bloco depois do sucesso ou do erro da requisição.
       } finally {
 
+        // Finaliza o carregamento e permite exibir os pratos ou o estado vazio.
         setCarregando(false)
 
       }
 
     }
 
+    // Executa a função que realiza a busca dos pratos.
     buscarPratos()
 
+  // O array vazio faz o efeito ser executado apenas uma vez, ao montar o componente.
   }, [])
 
   return (

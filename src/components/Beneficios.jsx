@@ -22,7 +22,9 @@ const Beneficios = () => {
 
           <div className="p-8 rounded-2xl bg-orange-50 text-center hover:shadow-lg transition duration-300">
             <div className="text-5xl mb-5">
-              ⚡
+              <span className="material-icons text-orange-500" aria-hidden="true">
+                bolt
+              </span>
             </div>
 
             <h3 className="text-xl font-bold text-gray-900">
@@ -36,7 +38,9 @@ const Beneficios = () => {
 
           <div className="p-8 rounded-2xl bg-orange-50 text-center hover:shadow-lg transition duration-300">
             <div className="text-5xl mb-5">
-              🍕
+              <span className="material-icons text-orange-500" aria-hidden="true">
+                local_pizza
+              </span>
             </div>
 
             <h3 className="text-xl font-bold text-gray-900">
@@ -50,7 +54,9 @@ const Beneficios = () => {
 
           <div className="p-8 rounded-2xl bg-orange-50 text-center hover:shadow-lg transition duration-300">
             <div className="text-5xl mb-5">
-              💳
+              <span className="material-icons text-orange-500" aria-hidden="true">
+                credit_card
+              </span>
             </div>
 
             <h3 className="text-xl font-bold text-gray-900">

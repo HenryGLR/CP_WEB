@@ -20,7 +20,11 @@ const Funcionalidades = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
           <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition duration-300">
-            <div className="text-4xl mb-4">🔎</div>
+            <div className="text-4xl mb-4">
+              <span className="material-icons text-orange-500" aria-hidden="true">
+                search
+              </span>
+            </div>
 
             <h3 className="text-xl font-bold text-gray-900">
               Busca rápida
@@ -32,7 +36,11 @@ const Funcionalidades = () => {
           </div>
 
           <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition duration-300">
-            <div className="text-4xl mb-4">🍽️</div>
+            <div className="text-4xl mb-4">
+              <span className="material-icons text-orange-500" aria-hidden="true">
+                restaurant
+              </span>
+            </div>
 
             <h3 className="text-xl font-bold text-gray-900">
               Categorias
@@ -44,7 +52,11 @@ const Funcionalidades = () => {
           </div>
 
           <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition duration-300">
-            <div className="text-4xl mb-4">⚙️</div>
+            <div className="text-4xl mb-4">
+              <span className="material-icons text-orange-500" aria-hidden="true">
+                tune
+              </span>
+            </div>
 
             <h3 className="text-xl font-bold text-gray-900">
               Filtros
@@ -56,7 +68,11 @@ const Funcionalidades = () => {
           </div>
 
           <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition duration-300">
-            <div className="text-4xl mb-4">❤️</div>
+            <div className="text-4xl mb-4">
+              <span className="material-icons text-orange-500" aria-hidden="true">
+                favorite
+              </span>
+            </div>
 
             <h3 className="text-xl font-bold text-gray-900">
               Favoritos

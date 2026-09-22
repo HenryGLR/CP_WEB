@@ -1,18 +1,30 @@
 import { useState } from "react"
 
 const Contato = () => {
+  // Cria o estado que armazena o valor digitado no campo de e-mail.
   const [email, setEmail] = useState("")
+
+  // Cria o estado que armazena a mensagem exibida após o envio do formulário.
   const [mensagem, setMensagem] = useState("")
 
+  // Define a função executada quando o usuário envia o formulário.
   const enviarFormulario = (evento) => {
+    // Impede o navegador de recarregar a página após o envio do formulário.
     evento.preventDefault()
 
+    // Verifica se o campo está vazio ou contém apenas espaços.
     if (email.trim() === "") {
+      // Informa ao usuário que é necessário preencher um e-mail.
       setMensagem("Digite um e-mail válido.")
+
+      // Interrompe a função para não continuar com um e-mail inválido.
       return
     }
 
+    // Exibe uma mensagem confirmando o cadastro do e-mail.
     setMensagem("E-mail cadastrado com sucesso!")
+
+    // Limpa o campo depois que o formulário é enviado corretamente.
     setEmail("")
   }
 

@@ -35,8 +35,12 @@ const Navbar = () => {
         <button
           className="md:hidden text-2xl"
           onClick={() => setMenuAberto(!menuAberto)}
+          aria-label={menuAberto ? "Fechar menu" : "Abrir menu"}
+          aria-expanded={menuAberto}
         >
-          ☰
+          <span className="material-icons" aria-hidden="true">
+            {menuAberto ? "close" : "menu"}
+          </span>
         </button>
 
       </div>

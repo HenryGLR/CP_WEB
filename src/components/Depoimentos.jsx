@@ -3,17 +3,17 @@ const Depoimentos = () => {
     {
       nome: "Mariana Silva",
       texto: "O GourmetOn facilitou muito meus pedidos. Tudo é rápido, simples e fácil de usar.",
-      avaliacao: "⭐⭐⭐⭐⭐",
+      avaliacao: 5,
     },
     {
       nome: "Lucas Martins",
       texto: "Gostei bastante da variedade de restaurantes e da praticidade para encontrar os pratos.",
-      avaliacao: "⭐⭐⭐⭐⭐",
+      avaliacao: 5,
     },
     {
       nome: "Ana Souza",
       texto: "A experiência é muito boa e o aplicativo deixa o pedido bem mais organizado.",
-      avaliacao: "⭐⭐⭐⭐⭐",
+      avaliacao: 5,
     },
   ]
 
@@ -42,7 +42,16 @@ const Depoimentos = () => {
               className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition duration-300"
             >
               <p className="text-lg mb-4">
-                {depoimento.avaliacao}
+                <span className="sr-only">
+                  Avaliação: {depoimento.avaliacao} de 5 estrelas
+                </span>
+                <span className="text-orange-500" aria-hidden="true">
+                  {Array.from({ length: depoimento.avaliacao }, (_, indice) => (
+                    <span className="material-icons" key={indice}>
+                      star
+                    </span>
+                  ))}
+                </span>
               </p>
 
               <p className="text-gray-600">
